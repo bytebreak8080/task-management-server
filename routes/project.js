@@ -9,7 +9,7 @@ import {
     removeProjectMember,
     getProjectStats,
     getAccessibleProjectNames
-} from "../controllers/ProjectController.js";
+} from "../controllers/projectController.js";
 import { auth, authorize } from "../middleware/auth.js";
 
 const router = express.Router();
