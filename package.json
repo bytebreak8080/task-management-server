@@ -8,6 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./bin/www"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -25,4 +28,5 @@
     "nodemon": "^1.18.10",
     "pug": "^2.0.3"
   }
+
 }
