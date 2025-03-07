@@ -27,10 +27,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Enable CORS for requests from http://localhost:3000
-app.use(cors({
-  origin: "https://task-management-server-sbny.onrender.com"
-}));
-
+app.use(
+  cors({
+    origin: "https://smarttasker.vercel.app",
+    methods: "GET,POST,PUT,DELETE,OPTIONS",
+    credentials: true, // If using cookies or authentication
+  })
+);
 // View engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
