@@ -28,7 +28,7 @@ const __dirname = dirname(__filename);
 
 // Enable CORS for requests from http://localhost:3000
 app.use(cors({
-  origin: "http://localhost:3000"
+  origin: "https://task-management-server-sbny.onrender.com"
 }));
 
 // View engine setup
